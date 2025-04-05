@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects | Azam Sufiyan</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Base Styles */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+            color: #2d3436;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header Styles */
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .logo-container {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .logo-container:hover {
+            transform: scale(1.05);
+        }
+
+        .logo-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #6c5ce7;
+            margin-bottom: 0.5rem;
+        }
+
+        .tagline {
+            color: #2d3436;
+            font-size: 1.1rem;
+            opacity: 0.8;
+        }
+
+        /* Projects Section */
+        .projects-container {
+            display: grid;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        .project-card h2 {
+            color: #6c5ce7;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .project-card h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(135deg, #6c5ce7 0%, #fd79a8 100%);
+            border-radius: 3px;
+        }
+
+        .project-card h3 {
+            color: #fd79a8;
+            margin: 1rem 0 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .project-card ul {
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-card p {
+            margin-bottom: 1rem;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+
+        .tech-item {
+            background: #6c5ce7;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: auto;
+            padding: 1.5rem;
+            color: #2d3436;
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            .project-card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <iframe src="infinite_loop.html" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <h1>My Projects</h1>
+            <p class="tagline">Innovative solutions with real-world impact</p>
+        </header>
+
+        <main class="projects-container">
+            <!-- Quiz Master Project -->
+            <section class="project-card">
+                <h2>Quiz Master</h2>
+                <p>A web-based quiz platform with admin and user functionalities built using Flask.</p>
+                
+                <h3>Description</h3>
+                <p>The Quiz Master application is a web-based platform designed for the creation, management, and participation in quizzes. It provides functionalities for both administrators and regular users.</p>
+                
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Admin panel for managing subjects, chapters, and questions</li>
+                    <li>User registration and authentication</li>
+                    <li>Interactive quiz interface</li>
+                    <li>Score tracking and performance analytics</li>
+                    <li>Graphical representation of results</li>
+                </ul>
+                
+                <h3>Technical Approach</h3>
+                <ul>
+                    <li>Flask backend with SQLAlchemy ORM</li>
+                    <li>Jinja2 templating for frontend</li>
+                    <li>Password hashing for security</li>
+                    <li>Matplotlib for data visualization</li>
+                </ul>
+                
+                <div class="tech-stack">
+                    <span class="tech-item">Flask</span>
+                    <span class="tech-item">Python</span>
+                    <span class="tech-item">SQLAlchemy</span>
+                    <span class="tech-item">Jinja2</span>
+                    <span class="tech-item">Matplotlib</span>
+                    <span class="tech-item">HTML/CSS</span>
+                </div>
+            </section>
+
+            <!-- Restaurant Booking System -->
+            <section class="project-card">
+                <h2>Restaurant Booking System</h2>
+                <p>A comprehensive solution for table reservations and food ordering with admin dashboard.</p>
+                
+                <h3>Description</h3>
+                <p>Web application that allows customers to book tables, order food for delivery, and includes an admin panel for managing orders and viewing customer locations via integrated maps.</p>
+                
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Real-time table availability</li>
+                    <li>Food ordering system</li>
+                    <li>Integrated maps for delivery tracking</li>
+                    <li>Admin dashboard for order management</li>
+                    <li>User authentication system</li>
+                </ul>
+                
+                <div class="tech-stack">
+                    <span class="tech-item">React</span>
+                    <span class="tech-item">Node.js</span>
+                    <span class="tech-item">MongoDB</span>
+                    <span class="tech-item">Google Maps API</span>
+                    <span class="tech-item">Express</span>
+                </div>
+            </section>
+
+            <!-- Fingerprint Voting System -->
+            <section class="project-card">
+                <h2>Fingerprint Electronic Voting System</h2>
+                <p>Biometric voting solution using Arduino and fingerprint authentication.</p>
+                
+                <h3>Description</h3>
+                <p>State-of-the-art solution designed to modernize the electoral process by integrating biometric authentication with traditional voting mechanisms using Arduino Nano and R307 Fingerprint Sensor.</p>
+                
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Biometric voter authentication</li>
+                    <li>Real-time vote recording</li>
+                    <li>LCD display for user interface</li>
+                    <li>GSM module for notifications</li>
+                    <li>Secure alarm system</li>
+                </ul>
+                
+                <h3>Technical Specifications</h3>
+                <ul>
+                    <li>Arduino Nano microcontroller</li>
+                    <li>R307 Fingerprint Sensor</li>
+                    <li>16x2 LCD Display</li>
+                    <li>SIM800L GSM Module</li>
+                    <li>Custom PCB design</li>
+                </ul>
+                
+                <h3>Social Impact</h3>
+                <ul>
+                    <li>Enhances democratic participation</li>
+                    <li>Reduces electoral fraud</li>
+                    <li>Promotes equal access to voting</li>
+                    <li>Aligns with UN Sustainable Development Goals</li>
+                </ul>
+                
+                <div class="tech-stack">
+                    <span class="tech-item">Arduino</span>
+                    <span class="tech-item">C++</span>
+                    <span class="tech-item">Embedded Systems</span>
+                    <span class="tech-item">PCB Design</span>
+                    <span class="tech-item">Biometrics</span>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>| Sufi | </p>
+        </footer>
+    </div>
+</body>
+</html>

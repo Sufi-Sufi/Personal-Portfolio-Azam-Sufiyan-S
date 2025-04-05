@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills | Azam Sufiyan</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Base Styles */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+            color: #2d3436;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header Styles */
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .logo-container {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .logo-container:hover {
+            transform: scale(1.05);
+        }
+
+        .logo-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #6c5ce7;
+            margin-bottom: 0.5rem;
+        }
+
+        .tagline {
+            color: #2d3436;
+            font-size: 1.1rem;
+            opacity: 0.8;
+        }
+
+        /* Skills Section */
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .skill-category {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .skill-category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        .skill-category h2 {
+            color: #6c5ce7;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .skill-category h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(135deg, #6c5ce7 0%, #fd79a8 100%);
+            border-radius: 3px;
+        }
+
+        .skill-item {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .skill-name {
+            flex: 1;
+            font-weight: 500;
+        }
+
+        .skill-level {
+            width: 120px;
+            height: 8px;
+            background: #dfe6e9;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .skill-progress {
+            height: 100%;
+            background: linear-gradient(90deg, #6c5ce7, #a29bfe);
+            border-radius: 4px;
+        }
+
+        .skill-legend {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1rem;
+            font-size: 0.8rem;
+            color: #636e72;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: auto;
+            padding: 1.5rem;
+            color: #2d3436;
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            .skill-category {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <iframe src="infinite_loop.html" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <h1>My Skills</h1>
+            <p class="tagline">Continuous learning and growth</p>
+        </header>
+
+        <main class="skills-container">
+            <!-- Programming Languages -->
+            <section class="skill-category">
+                <h2>Programming Languages</h2>
+                
+                <div class="skill-item">
+                    <span class="skill-name">Python</span>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 65%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <span class="skill-name">C</span>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 50%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <span class="skill-name">C++</span>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 30%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <span class="skill-name">Java</span>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <span class="skill-name">R</span>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-legend">
+                    <span>Beginner</span>
+                    <span>Intermediate</span>
+                    <span>Advanced</span>
+                </div>
+            </section>
+
+            <!-- Web Development -->
+            <section class="skill-category">
+                <h2>Web Development</h2>
+                
+                <div class="skill-item">
+                    <span class="skill-name">HTML/CSS</span>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <span class="skill-name">JavaScript</span>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 45%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <span class="skill-name">React</span>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 40%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <span class="skill-name">Flask</span>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 20%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-legend">
+                    <span>Beginner</span>
+                    <span>Intermediate</span>
+                    <span>Advanced</span>
+                </div>
+            </section>
+
+            <!-- Databases -->
+            <section class="skill-category">
+                <h2>Databases</h2>
+                
+                <div class="skill-item">
+                    <span class="skill-name">SQL</span>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 60%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <span class="skill-name">MongoDB</span>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 40%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <span class="skill-name">DBMS Concepts</span>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 50%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-legend">
+                    <span>Beginner</span>
+                    <span>Intermediate</span>
+                    <span>Advanced</span>
+                </div>
+            </section>
+
+            <!-- Computer Science -->
+            <section class="skill-category">
+                <h2>Computer Science</h2>
+                
+                <div class="skill-item">
+                    <span class="skill-name">Data Structures</span>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <span class="skill-name">Algorithms</span>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <span class="skill-name">Computer Thinking</span>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <span class="skill-name">DAA</span>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 65%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-legend">
+                    <span>Beginner</span>
+                    <span>Intermediate</span>
+                    <span>Advanced</span>
+                </div>
+            </section>
+
+            <!-- Electronics & Others -->
+            <section class="skill-category">
+                <h2>Electronics & Others</h2>
+                
+                <div class="skill-item">
+                    <span class="skill-name">Microprocessors</span>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <span class="skill-name">Microcontrollers</span>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <span class="skill-name">Digital System Design</span>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <span class="skill-name">MATLAB</span>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 60%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <span class="skill-name">RStudio</span>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 50%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-legend">
+                    <span>Beginner</span>
+                    <span>Intermediate</span>
+                    <span>Advanced</span>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>| S |</p>
+        </footer>
+    </div>
+</body>
+</html>

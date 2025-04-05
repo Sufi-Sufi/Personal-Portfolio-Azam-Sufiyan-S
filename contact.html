@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Azam Sufiyan</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Base Styles */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+            color: #2d3436;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header Styles */
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .logo-container {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .logo-container:hover {
+            transform: scale(1.05);
+        }
+
+        .logo-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #6c5ce7;
+            margin-bottom: 0.5rem;
+        }
+
+        .tagline {
+            color: #2d3436;
+            font-size: 1.1rem;
+            opacity: 0.8;
+        }
+
+        /* Contact Section */
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contact-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #6c5ce7 0%, #fd79a8 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .contact-card h2 {
+            color: #6c5ce7;
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+
+        .contact-info {
+            color: #2d3436;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .contact-link {
+            display: inline-block;
+            padding: 0.5rem 1.2rem;
+            background: #6c5ce7;
+            color: white;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            margin-top: 0.5rem;
+        }
+
+        .contact-link:hover {
+            background: #fd79a8;
+            transform: scale(1.05);
+        }
+
+        .email-buttons {
+            display: flex;
+            gap: 0.8rem;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        .email-btn {
+            padding: 0.4rem 0.8rem;
+            background: #f5f6fa;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .email-btn:hover {
+            background: #dfe6e9;
+        }
+
+        .email-value {
+            word-break: break-all;
+            font-family: monospace;
+            background: #f5f6fa;
+            padding: 0.8rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+            display: none;
+        }
+
+        /* Social Media */
+        .social-media {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .social-icon {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            color: #6c5ce7;
+            font-size: 1.2rem;
+        }
+
+        .social-icon:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            color: #fd79a8;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: auto;
+            padding: 1.5rem;
+            color: #2d3436;
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .email-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <iframe src="infinite_loop.html" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <h1>Contact Me</h1>
+            <p class="tagline">Let's connect and collaborate</p>
+        </header>
+
+        <main>
+            <div class="contact-container">
+                <!-- Phone -->
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h2>Phone</h2>
+                    <div class="contact-info">+91 96762 97289</div>
+                    <a href="tel:+919676297289" class="contact-link">
+                        <i class="fas fa-phone"></i> Call Me
+                    </a>
+                </div>
+
+                <!-- Email -->
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h2>Email</h2>
+                    <div class="email-buttons">
+                        <div class="email-btn" onclick="showEmail('vit')">VIT Email</div>
+                        <div class="email-btn" onclick="showEmail('personal')">Personal</div>
+                        <div class="email-btn" onclick="showEmail('iit')">IIT Email</div>
+                    </div>
+                    <div id="vit-email" class="email-value">azamsufiyan.s2023@vitstudent.ac.in</div>
+                    <div id="personal-email" class="email-value">azam.s.sufiyan@gmail.com</div>
+                    <div id="iit-email" class="email-value">24f2002048@ds.study.iitm.ac.in</div>
+                    <a href="#" id="email-link" class="contact-link" style="margin-top: 1rem;">
+                        <i class="fas fa-paper-plane"></i> Send Email
+                    </a>
+                </div>
+        </main>
+
+        <footer>
+            <p>| S |</p>
+        </footer>
+    </div>
+
+    <script>
+        function showEmail(type) {
+            // Hide all email values first
+            document.querySelectorAll('.email-value').forEach(el => {
+                el.style.display = 'none';
+            });
+            
+            // Show selected email
+            const emailEl = document.getElementById(`${type}-email`);
+            emailEl.style.display = 'block';
+            
+            // Update email link
+            const emailLink = document.getElementById('email-link');
+            emailLink.href = `mailto:${emailEl.textContent}`;
+        }
+        
+        // Show VIT email by default
+        document.addEventListener('DOMContentLoaded', function() {
+            showEmail('vit');
+        });
+    </script>
+</body>
+</html>
